@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <filter id="Path_14" x="219" y="-115" width="348.042" height="348.042" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_15" x="-174.021" y="623" width="348.042" height="348.042" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_15" x="313.918" y="497" width="122.163" height="122.163" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-list_open_1">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="list_open_1" data-name="list open – 1" clip-path="url(#clip-list_open_1)">
+    <rect width="375" height="812" fill="#fff"/>
+    <g id="Group_19" data-name="Group 19" transform="translate(1161 1584)">
+      <g transform="matrix(1, 0, 0, 1, -1161, -1584)" filter="url(#Path_14)">
+        <path id="Path_14-2" data-name="Path 14" d="M159.021,0A159.021,159.021,0,1,1,0,159.021,159.021,159.021,0,0,1,159.021,0Z" transform="translate(234 -108)" fill="#8aa8a1"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -1161, -1584)" filter="url(#Path_15)">
+        <path id="Path_15-2" data-name="Path 15" d="M159.021,0A159.021,159.021,0,1,1,0,159.021,159.021,159.021,0,0,1,159.021,0Z" transform="translate(-159.02 630)" fill="#ee7b30"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -1161, -1584)" filter="url(#Ellipse_15)">
+        <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="46.082" cy="46.082" r="46.082" transform="translate(328.92 504)" fill="#885a89"/>
+      </g>
+    </g>
+  </g>
+</svg>

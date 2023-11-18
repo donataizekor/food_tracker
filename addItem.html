@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foood tracker</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <button class="btn-back"><a href="./index.html"><</a></button>
+      
+      
+        <div class="add-item">          
+            <h1>Add to list</h1>
+
+            <input 
+                type="text"
+                name="name"
+                id="input-field">
+
+            <div class="input">
+                <label for="quantity">Quantity</label>
+                <input 
+                    type="text"
+                    name="quantity"
+                    id="quantity">
+            </div>
+            
+            <div class="input">
+                <label for="b-before">Best before</label>
+                <input 
+                    type="text"
+                    name="b-before"
+                    id="b-before">
+            </div>
+
+            <div class="input">
+                <label for="type">Type</label>
+                <select name="type-list" id="type-list">
+                    <option value=""></option>
+
+                    <option value="1">fridge</option>
+                    <option value="2">pantry</option>
+                    <option value="3">freezer</option>
+                    <option value="4">counter</option>
+                </select>
+            </div>
+
+            
+            <div class="buttons">
+                <button class="cancel">CANCEL</button>
+                <button class="add">ADD</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

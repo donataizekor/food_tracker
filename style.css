@@ -8,18 +8,31 @@
 }
 
 :root{
-    --purple: #885A89
+    --purple: #885A89;
+    --orange: #EE7B30;
+    --greenLight: #8AA8A1;
 }
 
+/* welcome page */
 .container{
+    height: 100vh;
+    background: url(img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+
     width: 375px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .container h1{
     font-size: 15px;
     font-weight: 500;
-    margin: 0 40px;
+    padding: 40px 40px 0;
     text-align: center;
 }
 
@@ -42,6 +55,7 @@
     box-shadow: 0 3px 6px #45454545;
     border-radius: 5px;
     padding: 25px;
+    background: white;
 }
 
 .cards .card img{
@@ -52,6 +66,7 @@
 
 .cards .card h1{
     font-weight: 600;
+    padding: 0;
     margin: 10px 0 15px 0;
 }
 
@@ -60,17 +75,115 @@
     text-align: center;
 }
 
-.container .button{
-    margin-top: 40px;
-}
-
-.container .button button{
-    background: var(--purple);
-    padding: 10px 15px;
-    margin-right: 50px;
+.btn-add{
+    align-self: self-end;
+    margin: 40px 60px 0;
+    padding: 5px 10px;
     border-radius: 50%;
     border: none;
-    float: right;
-    color: white
+    background: var(--purple);
 }
+
+.btn-add a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* add item */
+.add-item{
+    width: 315px;
+    height: 400px;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #45454545;
+    padding: 30px;
+}
+
+.add-item h1{
+    margin-bottom: 30px;
+}
+.add-item #input-field{
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    outline: none;
+    font-weight: 500;
+    /* letter-spacing: .2px; */
+    margin: 0 auto 30px;
+    display: block;
+
+}
+
+.add-item .input{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.add-item .input input{
+    margin-bottom: 10px;
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
+    padding: 5px 0; 
+}
+
+.add-item .input select{
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+.add-item .buttons{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.buttons .cancel{
+    color: var(--orange);
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.buttons .add{
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-back{
+    margin:  0 40px 60px;
+    align-self: self-start;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 25px;
+
+}
+
+.btn-back a{
+    text-decoration: none;
+
+}
+
+
+
+
+
 
