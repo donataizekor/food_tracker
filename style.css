@@ -10,7 +10,9 @@
 :root{
     --purple: #885A89;
     --orange: #EE7B30;
-    --greenLight: #8AA8A1;
+    --black45: #45454545;
+
+    --shadow: 0 3px 6px #45454545;
 }
 
 /* welcome page */
@@ -29,7 +31,8 @@
     margin: 0 auto;
 }
 
-.container h1{
+
+.container .title{
     font-size: 15px;
     font-weight: 500;
     padding: 40px 40px 0;
@@ -52,7 +55,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 3px 6px #45454545;
+    box-shadow: var(--shadow);
     border-radius: 5px;
     padding: 25px;
     background: white;
@@ -68,6 +71,7 @@
     font-weight: 600;
     padding: 0;
     margin: 10px 0 15px 0;
+    font-size: 15px;
 }
 
 .cards .card p{
@@ -101,13 +105,15 @@
     align-items: center; */
     background: white;
     border-radius: 5px;
-    box-shadow: 0 3px 6px #45454545;
+    box-shadow: var(--shadow);
     padding: 30px;
 }
 
 .add-item h1{
     margin-bottom: 30px;
+    text-align: center;
 }
+
 .add-item #input-field{
     padding: 5px 0;
     border: none;
@@ -181,6 +187,35 @@
     text-decoration: none;
 
 }
+
+
+/* rendering items */
+.item-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 30px;
+    border-bottom: 1px solid var(--black45);
+}
+
+.item-list h3{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.item-list button{
+    margin-left: 35%;
+    align-self: self-end;
+    background: var(--black45);
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: none;
+    
+}
+
+
 
 
 
