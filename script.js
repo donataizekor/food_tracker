@@ -120,3 +120,5 @@ function clearPage(){
 //                 };
 //             })
 //         }
+
+btnAddItem.addEventListener('click', addItem)
