@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foood tracker</title>
+    <title>fooood tracker</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js" type="module"></script>
     
 </head>
 <body>
     <div class="container">
-        <button class="btn-back"><a href="./index.html"><</a></button>
+        <button class="btn-backOpen"><a href="./index.html"><</a></button>
       
-      
-        <div class="add-item">          
+        <div class="add-itemCard">          
             <h1>Add to list</h1>
 
             <input 
                 type="text"
                 name="name"
-                id="input-field">
+                id="item-input">
 
             <div class="input">
                 <label for="quantity">Quantity</label>
                 <input 
                     type="text"
                     name="quantity"
-                    id="quantity">
+                    id="quantity-input">
             </div>
             
             <div class="input">
@@ -34,12 +33,12 @@
                 <input 
                     type="text"
                     name="b-before"
-                    id="b-before">
+                    id="b-before-input">
             </div>
 
             <div class="input">
-                <label for="type">Type</label>
-                <select name="type-list" id="type-list">
+                <label for="location">Location</label>
+                <select name="location-input" id="location-input">
                     <option value=""></option>
 
                     <option value="fridge">fridge</option>
@@ -51,8 +50,8 @@
 
             
             <div class="buttons">
-                <button class="cancel">CANCEL</button>
-                <button class="add">ADD</button>
+                <button class="btn-cancel"><a href="./index.html">CANCEL</a></button>
+                <button class="btn-addItem">ADD</button>
             </div>
         </div>
     </div>

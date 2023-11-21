@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foood tracker</title>
+    <title>fooood tracker</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js" type="module"></script>
 </head>
@@ -13,37 +13,46 @@
         <h1 class="title">Welcome,<br> start keeping track of what's in your kitchen by adding items to your list</h1>
 
         <div class="cards"> 
-            <div class="card fridge">
-                <img src="./img/icons8-milk-64.png" alt="fridge-icon">
-                <h1>FRIDGE</h1>
+            <a href="items_fridge.html">    
+                <div class="card fridge">
+                    <img src="./img/icons8-milk-64.png" alt="fridge-icon">
+                    <h1>FRIDGE</h1>
+                    <p>Does anybody know how to charge their milk.<br>Mine is stuck at 1%</p>
+                </div>
+            </a>
 
-                <p>Does anybody know how to charge their milk.<br>Mine is stuck at 1%</p>
-            </div>
-
+            <a href="#"> 
             <div class="card pantry">
                 <img src="./img/icons8-jam-64.png" alt="pantry-icon">
                 <h1>PANTRY</h1>
 
                 <p>What do you call blueberries playing the guitar?<br>A jam session</p>
             </div>
+            </a>
 
+            <a href="#"> 
             <div class="card freezer">
                 <img src="./img/icons8-ice-pop-64.png" alt="freezer-icon">
                 <h1>FREEZER</h1>
 
                 <p>How does Reese eat his ice cream?<br>Witherspoon.</p>
             </div>
+            </a>
 
+            <a href="#"> 
             <div class="card counter">
                 <img src="./img/icons8-banana-64.png" alt="counter-icon">
                 <h1>COUNTER</h1>
 
                 <p>Where do bananas buy their clothes?<br>Banana Republic.</p>
             </div>
+            </a>
         </div>
 
-       
-        <button class="btn-add"><a href="./addItem.html">+</a></button>
+        <a href="#" class="show-items">SHOW ALL</a>
+
+        <!-- TODO: CAHNGE THIS TO AN IMAGE MAYBE?? -->
+        <button class="btn-addOpen"><a href="./addItem.html">+</a></button>
       
   
     </div>

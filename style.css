@@ -35,7 +35,7 @@
 .container .title{
     font-size: 15px;
     font-weight: 500;
-    padding: 40px 40px 0;
+    padding: 0 40px;
     text-align: center;
 }
 
@@ -46,6 +46,22 @@
     gap: 25px 0;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.container .cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .cards a:hover{
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.container .show-items{
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
 }
 
 .cards .card{
@@ -79,24 +95,26 @@
     text-align: center;
 }
 
-.btn-add{
+.btn-addOpen{
     align-self: self-end;
-    margin: 40px 60px 0;
+    margin: 10px 60px 0;
     padding: 5px 10px;
     border-radius: 50%;
     border: none;
     background: var(--purple);
 }
 
-.btn-add a{
+.btn-addOpen a{
     text-decoration: none;
     color: white;
 }
 
 
 
+
+
 /* add item */
-.add-item{
+.add-itemCard{
     width: 315px;
     height: 400px;
     /* display: flex; */
@@ -109,12 +127,12 @@
     padding: 30px;
 }
 
-.add-item h1{
+.add-itemCard h1{
     margin-bottom: 30px;
     text-align: center;
 }
 
-.add-item #input-field{
+.add-itemCard #item-input{
     padding: 5px 0;
     border: none;
     border-bottom: 1px solid black;
@@ -127,30 +145,32 @@
 
 }
 
-.add-item .input{
+.add-itemCard .input{
     display: flex;
     justify-content: space-between;
-  
 }
 
-.add-item .input input{
-    margin-bottom: 10px;
+.add-itemCard .input label{
+     padding: 7px 0;
+}
+
+.add-itemCard .input input{
     width: 80px;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
     text-align: center;
-    padding: 5px 0; 
+    /* padding: 5px 0;  */
 }
 
-.add-item .input select{
+.add-itemCard .input select{
     width: 80px;
     border: none;
     border-bottom: 1px solid black;
-    padding: 5px 0;
+    /* padding: 5px 0; */
 }
 
-.add-item .buttons{
+.add-itemCard .buttons{
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -158,68 +178,70 @@
 }
 
 
-.buttons .cancel{
+.buttons .btn-cancel{
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons .btn-cancel a{
     color: var(--orange);
+    text-decoration: none;
+}
+
+.buttons .btn-addItem{
     border: none;
     background: none;
     font-weight: 600;
     font-size: 15px;
 }
 
-.buttons .add{
-    border: none;
-    background: none;
+.btn-backOpen{
+    margin:  0 40px 15px;
     font-weight: 600;
-    font-size: 15px;
-}
-
-.btn-back{
-    margin:  0 40px 60px;
     align-self: self-start;
+    background: var(--black45);
+    padding: 3px 8px;
     border-radius: 50%;
     border: none;
-    background: none;
-    font-size: 25px;
+    color: white;
 
 }
 
-.btn-back a{
+.btn-backOpen a{
     text-decoration: none;
 
 }
 
 
 /* rendering items */
-.item-list{
+.item-row{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto 2fr;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     align-items: center;
     padding: 5px 30px;
     border-bottom: 1px solid var(--black45);
 }
 
-.item-list h3{
-    font-size: 12px;
+.item-row h3{
+    font-size: 10px;
     font-weight: normal;
-   
 }
 
-.item-list p{
-    font-size: 15px;
+.item-row p{
+    font-size: 13px;
 }
 
-.item-list button{
-
- 
+.item-row button{
     float: right;
- 
     background: var(--black45);
     padding: 3px 8px;
     border-radius: 50%;
-    border: none;
-    
+    border: none;   
 }
 
 
