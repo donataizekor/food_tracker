@@ -220,10 +220,10 @@
 .item-row{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    align-items: center;
-    padding: 5px 30px;
+    align-items: top;
+    padding: 5px 15px;
     border-bottom: 1px solid var(--black45);
 }
 
@@ -233,8 +233,18 @@
 }
 
 .item-row p{
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 500;
 }
+
+
+
+.item-row .date-added h3,
+.item-row .date-added p{
+    font-size: 9px;
+}
+
+
 
 .item-row button{
     float: right;

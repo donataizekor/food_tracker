@@ -24,6 +24,7 @@ const btnAddItem = document.querySelector('.btn-addItem')
 
 //itemsRender.html
 const itemList = document.querySelector('.container-list-items')
+const dateAddEl = document.querySelector('.date-added')
 const dateEl = document.querySelector('.item-date')
 const itemEl = document.querySelector('.item-info')
 const locationEl = document.querySelector('.item-location')
@@ -32,15 +33,24 @@ const locationEl = document.querySelector('.item-location')
 let itemArray = []
 
 function addItem(){
-   const inputValue = itemInput.value
-   const quantityValue = quantityInput.value
-   const bBeforeValue = bBeforeInput.value
-   const locationValue = locationInput.value
+    const inputValue = itemInput.value
+    const quantityValue = quantityInput.value
+    const bBeforeValue = bBeforeInput.value
+    const locationValue = locationInput.value
+
+    const dateObj = new Date()
+    const day = dateObj.getDate()
+    const month = dateObj.getMonth() + 1;
+    const year = dateObj.getFullYear()
+
+    const currentDate = `${day}/${month}/${year}`
+    console.log(currentDate);  
+
    
    if(inputValue === ""){
     alert("please enter item")
    }else{
-    itemArray.push(inputValue, quantityValue, bBeforeValue, locationValue)
+    itemArray.push(currentDate, inputValue, quantityValue, bBeforeValue, locationValue)
     push(refFoodToDB, itemArray)
     resetInput()
    }
@@ -75,21 +85,26 @@ onValue(refFoodToDB, function(snapshot){
 //appending items to itemsRender.html
 function appendItem(item){
     let [itemID, itemValue] = item
+
     
     itemList.innerHTML += `
             <div class="item-row">
+                <div class="date-added">
+                    <h3>Date added</h3>
+                    <p>${dateAddEl.innerHTML = itemValue[0]}</p>
+                </div>
                 <div class="date">
                     <h3>Best before</h3>
-                    <p>${dateEl.innerHTML = itemValue[2]}</p>
+                    <p>${dateEl.innerHTML = itemValue[3]}</p>
                 </div>
                 
                 <div class="item-info">
                     <h3>Item</h3>
-                    <p>${itemEl.innerHTML = `${itemValue[1]}, ${itemValue[0]}`}</p>
+                    <p>${itemEl.innerHTML = `${itemValue[2]}, ${itemValue[1]}`}</p>
                 </div>
                 <div class="item-location">
                     <h3>Location</h3>
-                    <p>${locationEl.innerHTML = itemValue[3]}</p>
+                    <p>${locationEl.innerHTML = itemValue[4]}</p>
                 </div>
                 <div>
                     <button>x</button>
