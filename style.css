@@ -217,6 +217,33 @@
 
 
 /* rendering items */
+.container-list-items{
+    max-height: 500px;
+    overflow-y: auto;
+    background: #ffffff90;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--black45);
+    border-radius: 30px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gre);
+}
+
 .item-row{
     width: 100%;
     display: grid;
@@ -225,6 +252,7 @@
     align-items: top;
     padding: 5px 15px;
     border-bottom: 1px solid var(--black45);
+    
 }
 
 .item-row h3{
